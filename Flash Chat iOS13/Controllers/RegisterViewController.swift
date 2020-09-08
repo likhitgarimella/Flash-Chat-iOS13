@@ -9,7 +9,8 @@
 import UIKit
 
 class RegisterViewController: UIViewController {
-
+    
+    // Outlets
     @IBOutlet weak var emailTextfield: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
     
@@ -19,4 +20,4 @@ class RegisterViewController: UIViewController {
         
     }
     
-}   // #23
+}   // #24

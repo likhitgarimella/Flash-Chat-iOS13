@@ -9,7 +9,8 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    
+    // Outlets
     @IBOutlet weak var emailTextfield: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
     
@@ -19,4 +20,4 @@ class LoginViewController: UIViewController {
         
     }
     
-}   // #23
+}   // #24

@@ -9,7 +9,8 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
-
+    
+    // Outlets
     @IBOutlet weak var titleLabel: UILabel!
     
     override func viewDidLoad() {
@@ -19,4 +20,4 @@ class WelcomeViewController: UIViewController {
         
     }
     
-}   // #23
+}   // #24

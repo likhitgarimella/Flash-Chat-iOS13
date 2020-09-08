@@ -10,7 +10,8 @@
 import UIKit
 
 class ChatViewController: UIViewController {
-
+    
+    // Outlets
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var messageTextfield: UITextField!
     
@@ -27,4 +28,4 @@ class ChatViewController: UIViewController {
         
     }
     
-}   // #31
+}   // #32
