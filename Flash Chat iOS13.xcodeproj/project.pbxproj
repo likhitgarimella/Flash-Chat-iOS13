@@ -10,6 +10,8 @@
 		027DE20B250BD24F00BD71A5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 027DE20A250BD24E00BD71A5 /* GoogleService-Info.plist */; };
 		027DE20D250BF41700BD71A5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027DE20C250BF41700BD71A5 /* Constants.swift */; };
 		027DE20F250C012B00BD71A5 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027DE20E250C012B00BD71A5 /* Message.swift */; };
+		027DE213250C145700BD71A5 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027DE211250C145700BD71A5 /* MessageCell.swift */; };
+		027DE214250C145700BD71A5 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 027DE212250C145700BD71A5 /* MessageCell.xib */; };
 		029EECFA250819CF00F045B1 /* SF-Pro-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 029EECEC250819CD00F045B1 /* SF-Pro-Text-SemiboldItalic.otf */; };
 		029EECFB250819CF00F045B1 /* SF-Pro-Text-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 029EECED250819CD00F045B1 /* SF-Pro-Text-RegularItalic.otf */; };
 		029EECFC250819CF00F045B1 /* SF-Pro-Rounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 029EECEE250819CD00F045B1 /* SF-Pro-Rounded-Medium.otf */; };
@@ -41,6 +43,8 @@
 		027DE20A250BD24E00BD71A5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		027DE20C250BF41700BD71A5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		027DE20E250C012B00BD71A5 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Message.swift; path = "Flash Chat iOS13/Models/Message.swift"; sourceTree = SOURCE_ROOT; };
+		027DE211250C145700BD71A5 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		027DE212250C145700BD71A5 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		029EECEC250819CD00F045B1 /* SF-Pro-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
 		029EECED250819CD00F045B1 /* SF-Pro-Text-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-RegularItalic.otf"; sourceTree = "<group>"; };
 		029EECEE250819CD00F045B1 /* SF-Pro-Rounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Medium.otf"; sourceTree = "<group>"; };
@@ -165,6 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				0B62817C235DEE8100E35CAF /* Main.storyboard */,
+				027DE212250C145700BD71A5 /* MessageCell.xib */,
+				027DE211250C145700BD71A5 /* MessageCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -251,6 +257,7 @@
 				0B628183235DEE8400E35CAF /* LaunchScreen.storyboard in Resources */,
 				029EED02250819CF00F045B1 /* SF-Pro-Rounded-Regular.otf in Resources */,
 				029EED04250819CF00F045B1 /* SF-Pro-Rounded-Black.otf in Resources */,
+				027DE214250C145700BD71A5 /* MessageCell.xib in Resources */,
 				029EECFF250819CF00F045B1 /* SF-Pro-Rounded-Light.otf in Resources */,
 				029EECFE250819CF00F045B1 /* SF-Pro-Text-LightItalic.otf in Resources */,
 				029EECFD250819CF00F045B1 /* SF-Pro-Rounded-Bold.otf in Resources */,
@@ -325,6 +332,7 @@
 				027DE20F250C012B00BD71A5 /* Message.swift in Sources */,
 				0B628191235DF01B00E35CAF /* ChatViewController.swift in Sources */,
 				0B62818D235DF00B00E35CAF /* RegisterViewController.swift in Sources */,
+				027DE213250C145700BD71A5 /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
