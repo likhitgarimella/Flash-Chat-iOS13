@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		027DE20B250BD24F00BD71A5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 027DE20A250BD24E00BD71A5 /* GoogleService-Info.plist */; };
 		029EECFA250819CF00F045B1 /* SF-Pro-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 029EECEC250819CD00F045B1 /* SF-Pro-Text-SemiboldItalic.otf */; };
 		029EECFB250819CF00F045B1 /* SF-Pro-Text-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 029EECED250819CD00F045B1 /* SF-Pro-Text-RegularItalic.otf */; };
 		029EECFC250819CF00F045B1 /* SF-Pro-Rounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 029EECEE250819CD00F045B1 /* SF-Pro-Rounded-Medium.otf */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		027DE20A250BD24E00BD71A5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		029EECEC250819CD00F045B1 /* SF-Pro-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
 		029EECED250819CD00F045B1 /* SF-Pro-Text-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-RegularItalic.otf"; sourceTree = "<group>"; };
 		029EECEE250819CD00F045B1 /* SF-Pro-Rounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Medium.otf"; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				0B62817F235DEE8400E35CAF /* Assets.xcassets */,
 				0B628181235DEE8400E35CAF /* LaunchScreen.storyboard */,
 				0B628184235DEE8400E35CAF /* Info.plist */,
+				027DE20A250BD24E00BD71A5 /* GoogleService-Info.plist */,
 			);
 			path = "Flash Chat iOS13";
 			sourceTree = "<group>";
@@ -166,7 +169,6 @@
 				87EABDF492F11BFEC4C240DF /* Pods-Flash Chat iOS13.debug.xcconfig */,
 				3E6BF6606DBED0C2AEC5F737 /* Pods-Flash Chat iOS13.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -254,6 +256,7 @@
 				029EED01250819CF00F045B1 /* SF-Pro-Rounded-Semibold.otf in Resources */,
 				0B62817E235DEE8100E35CAF /* Main.storyboard in Resources */,
 				029EED00250819CF00F045B1 /* SF-Pro-Rounded-Thin.otf in Resources */,
+				027DE20B250BD24F00BD71A5 /* GoogleService-Info.plist in Resources */,
 				029EECFB250819CF00F045B1 /* SF-Pro-Text-RegularItalic.otf in Resources */,
 				029EECFA250819CF00F045B1 /* SF-Pro-Text-SemiboldItalic.otf in Resources */,
 			);
