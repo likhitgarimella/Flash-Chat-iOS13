@@ -46,4 +46,16 @@ class ChatViewController: UIViewController {
         
     }
     
-}   // #50
+}
+
+extension ChatViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return messages.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
+}   // #62

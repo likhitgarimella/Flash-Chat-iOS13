@@ -322,6 +322,10 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="lwd-AH-u8E" id="yUn-DK-2B9"/>
+                                    <outlet property="delegate" destination="lwd-AH-u8E" id="2u2-vD-X36"/>
+                                </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xlo-0G-XA6">
                                 <rect key="frame" x="0.0" y="802" width="414" height="60"/>
