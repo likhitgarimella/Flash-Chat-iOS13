@@ -7,16 +7,17 @@
 //
 
 import UIKit
+import CLTypingLabel
 
 class WelcomeViewController: UIViewController {
     
     // Outlets
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var titleLabel: CLTypingLabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        titleLabel.text = "⚡️FlashChat"
         
     }
     
@@ -34,4 +35,4 @@ extension UIViewController {
         view.endEditing(true)
     }
     
-}   // #38
+}   // #39
