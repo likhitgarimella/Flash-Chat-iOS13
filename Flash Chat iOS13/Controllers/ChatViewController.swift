@@ -24,6 +24,7 @@ class ChatViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.backgroundColor = UIColor.white
         title = K.appName
         navigationItem.hidesBackButton = true
         
@@ -56,8 +57,9 @@ extension ChatViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath)
-        cell.textLabel?.text = "This is a cell"
+        cell.textLabel?.text = messages[indexPath.row].body
+        cell.textLabel?.textColor = UIColor.darkGray
         return cell
     }
     
-}   // #64
+}   // #66
