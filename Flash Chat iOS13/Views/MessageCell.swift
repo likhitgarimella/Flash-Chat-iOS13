@@ -9,6 +9,8 @@
 import UIKit
 
 class MessageCell: UITableViewCell {
+    
+    // Outlets
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,4 +26,4 @@ class MessageCell: UITableViewCell {
         
     }
     
-}   // #28
+}   // #30

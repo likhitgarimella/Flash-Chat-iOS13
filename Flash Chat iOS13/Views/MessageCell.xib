@@ -1,21 +1,73 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17124"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Rounded-Regular.otf">
+            <string>SFProRounded-Regular</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MessageCell" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MessageCell" customModule="Flash_Chat_iOS13" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MeAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="2rv-o1-hLo">
+                        <rect key="frame" x="266" y="10" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="fYg-Mp-Y0y"/>
+                            <constraint firstAttribute="height" constant="44" id="g6F-ib-nQP"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8jf-sP-Ro0">
+                        <rect key="frame" x="10" y="10" width="236" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDX-pX-ukO">
+                                <rect key="frame" x="10" y="10" width="216" height="24"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="16"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="BrandPurple"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="QDX-pX-ukO" secondAttribute="bottom" constant="10" id="1Oe-un-Au4"/>
+                            <constraint firstAttribute="trailing" secondItem="QDX-pX-ukO" secondAttribute="trailing" constant="10" id="6nQ-eg-iC4"/>
+                            <constraint firstItem="QDX-pX-ukO" firstAttribute="top" secondItem="8jf-sP-Ro0" secondAttribute="top" constant="10" id="Bhr-bL-gzp"/>
+                            <constraint firstItem="QDX-pX-ukO" firstAttribute="leading" secondItem="8jf-sP-Ro0" secondAttribute="leading" constant="10" id="PQL-cJ-0Le"/>
+                            <constraint firstAttribute="height" constant="44" id="eDu-ai-xvz"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2rv-o1-hLo" firstAttribute="leading" secondItem="8jf-sP-Ro0" secondAttribute="trailing" constant="20" id="14k-Fa-pzK"/>
+                    <constraint firstAttribute="bottom" secondItem="2rv-o1-hLo" secondAttribute="bottom" constant="10" id="C5Y-gH-aDZ"/>
+                    <constraint firstItem="2rv-o1-hLo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Hhq-5j-aAR"/>
+                    <constraint firstAttribute="bottom" secondItem="8jf-sP-Ro0" secondAttribute="bottom" constant="10" id="O2c-Xs-hWV"/>
+                    <constraint firstItem="8jf-sP-Ro0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Y5B-Uc-Mda"/>
+                    <constraint firstItem="8jf-sP-Ro0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="eQh-wZ-VwT"/>
+                    <constraint firstAttribute="trailing" secondItem="2rv-o1-hLo" secondAttribute="trailing" constant="10" id="zl7-bH-EqH"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="53.623188405797109" y="94.419642857142847"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="MeAvatar" width="36" height="36"/>
+        <namedColor name="BrandPurple">
+            <color red="0.67500001192092896" green="0.43500000238418579" blue="0.9179999828338623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
