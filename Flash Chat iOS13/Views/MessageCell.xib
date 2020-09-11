@@ -24,10 +24,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8jf-sP-Ro0">
-                        <rect key="frame" x="10" y="10" width="236" height="44"/>
+                        <rect key="frame" x="74" y="10" width="172" height="44"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDX-pX-ukO">
-                                <rect key="frame" x="10" y="10" width="216" height="24"/>
+                                <rect key="frame" x="10" y="10" width="152" height="24"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="16"/>
                                 <color key="textColor" name="BrandLightPurple"/>
                                 <nil key="highlightedColor"/>
@@ -41,6 +41,13 @@
                             <constraint firstItem="QDX-pX-ukO" firstAttribute="leading" secondItem="8jf-sP-Ro0" secondAttribute="leading" constant="10" id="PQL-cJ-0Le"/>
                         </constraints>
                     </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YouAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="IWo-mR-2kn">
+                        <rect key="frame" x="10" y="8" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="cNp-GB-5hC"/>
+                            <constraint firstAttribute="height" constant="44" id="x5m-k3-jHo"/>
+                        </constraints>
+                    </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MeAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="2rv-o1-hLo">
                         <rect key="frame" x="266" y="8" width="44" height="44"/>
                         <constraints>
@@ -51,10 +58,12 @@
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
+                    <constraint firstItem="IWo-mR-2kn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="0e7-8f-ohs"/>
                     <constraint firstItem="2rv-o1-hLo" firstAttribute="leading" secondItem="8jf-sP-Ro0" secondAttribute="trailing" constant="20" id="14k-Fa-pzK"/>
+                    <constraint firstItem="8jf-sP-Ro0" firstAttribute="leading" secondItem="IWo-mR-2kn" secondAttribute="trailing" constant="20" id="1sh-IY-b8g"/>
+                    <constraint firstItem="IWo-mR-2kn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="BYV-yQ-Gqx"/>
                     <constraint firstItem="2rv-o1-hLo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Hhq-5j-aAR"/>
                     <constraint firstAttribute="bottom" secondItem="8jf-sP-Ro0" secondAttribute="bottom" constant="10" id="O2c-Xs-hWV"/>
-                    <constraint firstItem="8jf-sP-Ro0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Y5B-Uc-Mda"/>
                     <constraint firstItem="8jf-sP-Ro0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="eQh-wZ-VwT"/>
                     <constraint firstAttribute="trailing" secondItem="2rv-o1-hLo" secondAttribute="trailing" constant="10" id="zl7-bH-EqH"/>
                 </constraints>
@@ -63,6 +72,7 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="label" destination="QDX-pX-ukO" id="gnG-T5-Z0t"/>
+                <outlet property="leftImageView" destination="IWo-mR-2kn" id="s2F-H8-gbW"/>
                 <outlet property="messageBubble" destination="8jf-sP-Ro0" id="K3G-6h-wt5"/>
                 <outlet property="rightImageView" destination="2rv-o1-hLo" id="tJp-KC-99B"/>
             </connections>
@@ -71,6 +81,7 @@
     </objects>
     <resources>
         <image name="MeAvatar" width="36" height="36"/>
+        <image name="YouAvatar" width="36" height="36"/>
         <namedColor name="BrandLightPurple">
             <color red="0.98000001907348633" green="0.9649999737739563" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

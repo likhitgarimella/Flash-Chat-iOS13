@@ -13,6 +13,7 @@ class MessageCell: UITableViewCell {
     // Outlets
     @IBOutlet var messageBubble: UIView!
     @IBOutlet var label: UILabel!
+    @IBOutlet var leftImageView: UIImageView!
     @IBOutlet var rightImageView: UIImageView!
     
     override func awakeFromNib() {
@@ -29,4 +30,4 @@ class MessageCell: UITableViewCell {
         
     }
     
-}   // #33
+}   // #34
