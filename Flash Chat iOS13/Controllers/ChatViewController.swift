@@ -9,20 +9,22 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 
 class ChatViewController: UIViewController {
     
     // Outlets
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var messageTextfield: UITextField!
+    @IBOutlet var sendButton: UIButton!
+    @IBOutlet var heightConstraint: NSLayoutConstraint!
     
-    var messages: [Message] = [
-        Message(sender: "1@2.com", body: "Hey!"),
-        Message(sender: "a@b.com", body: "Hello!")
-    ]
+    var messages: [Message] = [Message]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        hideKeyboardWhenTappedAround()
         
         tableView.backgroundColor = UIColor.white
         title = K.appName
@@ -34,7 +36,24 @@ class ChatViewController: UIViewController {
     
     @IBAction func sendPressed(_ sender: UIButton) {
         
+        messageTextfield.endEditing(true)
+        messageTextfield.isEnabled = false
+        sendButton.isEnabled = false
         
+        let messagesDB = Database.database().reference().child("Messages")
+                
+        let messageDictionary = ["Sender": Auth.auth().currentUser?.email, "MessageBody": messageTextfield.text!]
+                
+        messagesDB.childByAutoId().setValue(messageDictionary) { (error, reference) in
+            if error != nil {
+                print(error!)
+            } else {
+                print("Message Saved Successfully!")
+                self.messageTextfield.isEnabled = true
+                self.sendButton.isEnabled = true
+                self.messageTextfield.text = ""
+            }
+        }
         
     }
     
@@ -63,4 +82,4 @@ extension ChatViewController: UITableViewDataSource {
         return cell
     }
     
-}   // #67
+}   // #86

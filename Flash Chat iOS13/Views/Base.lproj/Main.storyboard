@@ -379,7 +379,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="heightConstraint" destination="KKG-6H-f0d" id="D7W-L0-lzz"/>
                         <outlet property="messageTextfield" destination="UWj-GQ-Vph" id="INS-Xk-EA9"/>
+                        <outlet property="sendButton" destination="pym-e9-R2r" id="3MK-An-dBf"/>
                         <outlet property="tableView" destination="S6L-hg-cne" id="dTJ-K9-WAe"/>
                     </connections>
                 </viewController>
