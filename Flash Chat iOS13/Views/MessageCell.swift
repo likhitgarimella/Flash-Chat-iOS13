@@ -12,6 +12,7 @@ class MessageCell: UITableViewCell {
     
     // Outlets
     @IBOutlet var messageBubble: UIView!
+    @IBOutlet var mailLabel: UILabel!
     @IBOutlet var label: UILabel!
     @IBOutlet var leftImageView: UIImageView!
     @IBOutlet var rightImageView: UIImageView!
@@ -30,4 +31,4 @@ class MessageCell: UITableViewCell {
         
     }
     
-}   // #34
+}   // #35
