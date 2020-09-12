@@ -67,7 +67,7 @@ class ChatViewController: UIViewController {
                 let snapshotValue = snapshot.value as! Dictionary<String, String>
                 let body = snapshotValue["MessageBody"]!
                 let sender = snapshotValue["Sender"]!
-                print(body, sender)
+                // print(body, sender)
                 
                 let message = Message(sender: sender, body: body)
                 self.messages.append(message)
@@ -101,20 +101,23 @@ extension ChatViewController: UITableViewDataSource {
         let message = messages[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath) as! MessageCell
         cell.label?.text = message.body
+        cell.mailLabel.text = message.sender
         
         if message.sender == Auth.auth().currentUser?.email {
             cell.leftImageView.isHidden = true
             cell.rightImageView.isHidden = false
             cell.messageBubble.backgroundColor = UIColor(named: K.BrandColors.lightPurple)
             cell.label.textColor = UIColor(named: K.BrandColors.purple)
+            cell.mailLabel.textColor = UIColor(named: K.BrandColors.purple)
         } else {
             cell.leftImageView.isHidden = false
             cell.rightImageView.isHidden = true
             cell.messageBubble.backgroundColor = UIColor(named: K.BrandColors.purple)
             cell.label.textColor = UIColor(named: K.BrandColors.lightPurple)
+            cell.mailLabel.textColor = UIColor(named: K.BrandColors.lightPurple)
         }
         
         return cell
     }
     
-}   // #121
+}   // #124
