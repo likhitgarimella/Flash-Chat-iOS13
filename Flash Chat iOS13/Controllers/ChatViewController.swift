@@ -11,7 +11,7 @@ import UIKit
 import FirebaseAuth
 import FirebaseDatabase
 
-class ChatViewController: UIViewController {
+class ChatViewController: UIViewController, UITextFieldDelegate {
     
     // Outlets
     @IBOutlet weak var tableView: UITableView!
@@ -34,6 +34,24 @@ class ChatViewController: UIViewController {
         
         retrieveMessages()
         
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        
+        UIView.animate(withDuration: 0.5) {
+            self.heightConstraint.constant = 308
+            self.view.layoutIfNeeded()
+        }
+            
+    }
+        
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        
+        UIView.animate(withDuration: 0.5) {
+            self.heightConstraint.constant = 50
+            self.view.layoutIfNeeded()
+        }
+            
     }
     
     @IBAction func sendPressed(_ sender: UIButton) {
@@ -120,4 +138,4 @@ extension ChatViewController: UITableViewDataSource {
         return cell
     }
     
-}   // #124
+}   // #142
